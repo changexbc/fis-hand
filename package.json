@@ -1,8 +1,12 @@
 {
   "name": "fis-hand",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "fis-hand",
   "main": "hand.js",
+  "bin": {
+    "hand": "bin/hand",
+    "fis-hand": "bin/hand"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
