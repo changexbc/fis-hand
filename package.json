@@ -1,0 +1,24 @@
+{
+  "name": "hand",
+  "version": "0.0.1",
+  "description": "hand",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fis"
+  ],
+  "author": "xbc",
+  "license": "BSD",
+  "dependencies": {
+    "fis": "^1.9.11",
+    "fis-lint-jshint": "0.0.10",
+    "fis-parser-sass": "^0.3.5",
+    "fis-parser-utc": "0.0.2",
+    "fis-postpackager-autoload": "0.0.19",
+    "fis-postpackager-simple": "0.0.23",
+    "fis-postprocessor-require-async": "0.0.9",
+    "fis-preprocessor-cssprefixer": "0.0.2"
+  }
+}
