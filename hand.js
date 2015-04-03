@@ -25,7 +25,7 @@ fis.config.merge({
         },
         path: [{
             reg: /^\/node_modules\/.*\.js$/i,
-            isMod: true
+            release: false
         }, {
             reg: /^\/page\/(.*)$/i,
             useCache: false,
