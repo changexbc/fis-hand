@@ -21,7 +21,7 @@ fis.config.merge({
     },
     roadmap: {
         ext: {
-            less: 'css'
+            scss: 'css'
         },
         path: [{
             reg: /^\/node_modules\/.*\.js$/i,
@@ -53,7 +53,7 @@ fis.config.merge({
             release: false
         }, {
             //其他css文件
-            reg: /^(.*)\.(css|less)$/i,
+            reg: /^(.*)\.(css|scss)$/i,
             release: '${statics}/$&'
         }, {
             //前端模板
