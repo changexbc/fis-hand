@@ -8,6 +8,7 @@
     "fis-hand": "bin/hand"
   },
   "scripts": {
+    "uninstall": "node bin/hand server stop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
