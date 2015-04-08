@@ -79,9 +79,9 @@ fis.config.merge({
             release: '${statics}/$&'
         }]
     },
-    settings: {
-        parser: {
-            sass: {
+    settings:{
+        parser:{
+            sass:{
                 sourceMap: 'true'
             }
         },
