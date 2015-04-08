@@ -67,7 +67,7 @@ fis.config.merge({
             reg: '**.inline.html',
             //只是内嵌，不用发布
             release: false
-        }, {
+        },{
             reg: /.*\.(html|jsp|tpl|vm|htm|asp|aspx|php)$/,
             useCache: false,
             release: '$&'
@@ -103,9 +103,9 @@ fis.config.merge({
                 noempty: true,
                 node: true
             }
+        },
+        project:{
+            exclude:'**/_*.scss'
         }
-    },
-    project: {
-        exclude: '**/_*.scss'
     }
 });

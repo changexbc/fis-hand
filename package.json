@@ -1,6 +1,6 @@
 {
   "name": "fis-hand",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "fis-hand",
   "main": "hand.js",
   "bin": {

@@ -1,3 +1,2 @@
 #!/usr/bin/env node
-
 require('../hand.js').cli.run( process.argv );
