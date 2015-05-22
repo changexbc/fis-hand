@@ -80,17 +80,14 @@ fis.config.merge({
         }]
     },
     settings:{
-        parser:{
-            sass:{
-                sourceMap: 'true',
-                include_paths: [
-                    './view/sass'
-                ]
-            }
-        },
         postprocessor: {
             jswrapper: {
                 type: 'amd'
+            }
+        },
+        postpackager:{
+            simple:{
+                autoCombine:true
             }
         },
         lint: {
