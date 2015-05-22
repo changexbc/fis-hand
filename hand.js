@@ -82,7 +82,10 @@ fis.config.merge({
     settings:{
         parser:{
             sass:{
-                sourceMap: 'true'
+                sourceMap: 'true',
+                include_paths: [
+                    './view/sass'
+                ]
             }
         },
         postprocessor: {
@@ -103,9 +106,9 @@ fis.config.merge({
                 noempty: true,
                 node: true
             }
-        },
-        project:{
-            exclude:'**/_*.scss'
         }
+    },
+    project:{
+        exclude:'**/_*.scss'
     }
 });
