@@ -24,8 +24,8 @@ fis.config.merge({
             scss: 'css'
         },
         path: [{
-            reg: /^\/node_modules\/.*\.js$/i,
-            release: false
+            reg: /^\/components\/.*\.js$/i,
+            isMod: true
         }, {
             reg: /^\/page\/(.*)$/i,
             useCache: false,
@@ -67,7 +67,15 @@ fis.config.merge({
             reg: '**.inline.html',
             //只是内嵌，不用发布
             release: false
-        },{
+        }, {
+            //bash脚本
+            reg: '**.sh',
+            //只是内嵌，不用发布
+            release: false
+        }, {
+            reg: /^\/node_modules\/.*\.js$/i,
+            release: false
+        }, {
             reg: /.*\.(html|jsp|tpl|vm|htm|asp|aspx|php)$/,
             useCache: false,
             release: '$&'
