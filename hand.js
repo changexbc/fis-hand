@@ -17,7 +17,8 @@ fis.config.merge({
         postpackager: ['autoload', 'simple'],
         lint: {
             js: 'jshint'
-        }
+        },
+        spriter:'csssprites'
     },
     roadmap: {
         ext: {
@@ -30,6 +31,9 @@ fis.config.merge({
             reg: /^\/page\/(.*)$/i,
             useCache: false,
             release: '$1'
+        }, {
+            reg: '**.scss',
+            useSprite: true
         }, {
             //一级同名组件，可以引用短路径，比如modules/jquery/juqery.js
             //直接引用为var $ = require('jquery');
