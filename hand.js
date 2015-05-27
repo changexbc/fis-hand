@@ -25,15 +25,13 @@ fis.config.merge({
             scss: 'css'
         },
         path: [{
-            reg: /^\/components\/.*\.js$/i,
-            isMod: true
+            reg: /^\/components\/(.*\.js)$/i,
+            isMod: true,
+            release: '${statics}/modules/$1'
         }, {
             reg: /^\/page\/(.*)$/i,
             useCache: false,
             release: '$1'
-        }, {
-            reg: '**.scss',
-            useSprite: true
         }, {
             //一级同名组件，可以引用短路径，比如modules/jquery/juqery.js
             //直接引用为var $ = require('jquery');
@@ -52,12 +50,9 @@ fis.config.merge({
             id: '$1',
             release: '${statics}/$&'
         }, {
-            //sass的mixin文件无需发布
-            reg: /^(.*)mixin\.scss$/i,
-            release: false
-        }, {
             //其他css文件
             reg: /^(.*)\.(css|scss)$/i,
+            useSprite: true,
             release: '${statics}/$&'
         }, {
             //前端模板
